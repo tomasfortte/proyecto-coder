@@ -1,0 +1,192 @@
+
+header h1 { /* tipografia logo */ 
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #D6D6D6; 
+    font-family: 'Anybody';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* --------------- HTML PRINCIPAL --------------- */
+
+.container-encabezado {
+    margin: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D6D6D6;
+}
+
+.barraNav nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.barraNav nav ul li {
+    margin: 0 15px;
+    display: flex;
+    align-items: center; /* Align items vertically in the middle */
+}
+
+.barraNav nav ul li a {
+    text-decoration: none;
+    color: #000; 
+}
+
+/* Special case for the log-in icon */
+.barraNav nav ul li.log-in {
+    margin-left: auto; /* Pushes the log-in icon to the far right */
+}
+
+.log-in-icon {
+    width: 40px; /* Adjust the size as needed */
+    height: auto;
+}
+/*
+.barraNav{
+    width: 400px;
+    border: 1rem solid blue;
+
+}
+.barraNav ul {
+    list-style-type: none;
+    background-color: white;
+}
+
+
+.barraNav li .log-in-icon{
+    width: 39px; /* tamaño ícono 
+    height: auto;
+    text-align: end;
+}
+  */
+
+.container-main{
+    width: 900px;
+    height: 1200px;
+    margin: .9375rem;
+    padding: 1.6875rem;
+    display: flex;
+    height: 100%;
+    width: auto;
+    border: 3px solid black;
+    background-color: rgb(255, 0, 225);
+}
+
+.container-main h2{
+    display: flex;
+    text-align: left;
+}
+
+
+
+
+/* --------------- PAGINA ABOUT US -------------- */
+
+/*.container-infoempresa{
+
+}
+*/
+
+
+/* ----------------- PAGINA LOG IN ------------- */
+
+.alternativeLog{
+    text-align: center;
+}
+.alternativeLog img {
+    width: 50px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: auto; /* Ajusta la altura automáticamente según el ancho */
+    margin: 0 10px; /* Añade margen entre las imágenes */
+    border: .0625rem black;
+}
+
+
+.registeredLog {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+
+
+
+/* -------------------PAGINA SHOP----------------- */
+
+
+.container-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 4rem; 
+}
+.container-car {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-car h3{
+    font-weight: bold;
+}
+.container-car p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.container-car img {
+    max-width: 90%;
+    height: auto;
+    margin-top: 20px;
+}
+
+
+
+/* ----------FOOTER HTML---------- */
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: .9375rem;
+    margin-top: 3rem;
+
+}
+
+.infoContacto {
+    display: flex; /* Usa flexbox para el contenedor */
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+
+}
+
+.infoContacto > div {
+    text-align: center; /* Centra el contenido dentro de cada div */
+    flex: 1; /* Hace que cada div ocupe el mismo espacio */
+    margin: 0 10px; /* Añade un margen entre los elementos */
+}
+
+
+.infoContacto img {
+    width: 40px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: 40px;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.container-copyright{
+    text-align: center;
+}
