@@ -16,10 +16,9 @@ body {
     margin: 0;
     width: 100%;
     box-sizing: border-box;
-    overflow-x: hidden; /* Evita el desbordamiento horizontal */
-}
+    overflow-x: hidden; 
 
-/* --------------- HTML PRINCIPAL --------------- */
+
 
 .container-encabezado {
     padding: 25px;
@@ -53,6 +52,10 @@ body {
     width: 40px; 
     height: auto;
 }
+
+
+/* --------------- HTML PRINCIPAL --------------- */
+
 
 #grid-main {
     margin: 0.9375rem;
@@ -240,7 +243,7 @@ body {
     }
 
     .grid-background, .grid-background1 {
-        display: none; /* Esconder estos elementos en pantallas pequeñas */
+        display: none; 
     }
 
     .infoContacto {
@@ -313,40 +316,39 @@ body {
 
 .grid-explore {
     display: grid;
-    position: relative; /* Para posicionar elementos dentro relativamente */
+    position: relative; 
 }
 
 .parte-uno {
     position: relative;
     width: 100%;
-    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+    height: 100vh; 
 }
 
 .parte-uno .fondo {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+    object-fit: cover; 
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1; /* Coloca el fondo detrás */
+    z-index: 1; 
 }
 
 .overlay {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100%; /* Asegura que el overlay ocupe toda la altura del contenedor */
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
     position: relative;
-    z-index: 2; /* Coloca los elementos encima del fondo */
+    z-index: 2; 
 }
 
 .item {
     position: relative;
-    margin: 0 20px; /* Espacio entre los elementos */
-    text-align: center; /* Centra el texto dentro del item */
+    margin: 0 20px;
+    text-align: center; 
 }
-
 .item img {
     display: block;
     max-width: 34.375rem;
@@ -387,7 +389,7 @@ body {
     }
 
     .text {
-        font-size: 16px; /* Ajusta el tamaño del texto en pantallas más pequeñas */
+        font-size: 16px; 
     }
 }
 
@@ -484,9 +486,9 @@ body {
     display: grid;
 }
 .alternativeLog img {
-    width: 50px; /* Ajusta el tamaño de las imágenes según sea necesario */
-    height: auto; /* Ajusta la altura automáticamente según el ancho */
-    margin: 0 10px; /* Añade margen entre las imágenes */
+    width: 50px; 
+    height: auto; 
+    margin: 0 10px; 
     border: .0625rem black;
 }
 
@@ -495,12 +497,30 @@ body {
     text-align: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------- PAGINA SHOP ----------------- */
 .container-productos {
     display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
     gap: 20px;
-    padding: 4rem; 
+    padding: 2rem; 
 }
 
 .container-car {
@@ -527,6 +547,67 @@ body {
     max-width: 90%;
     height: auto;
     margin-top: 20px;
+}
+
+    @media (max-width: 1200px) {
+        .container-productos {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+    @media (max-width: 900px) {
+        .container-productos {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .container-productos {
+            grid-template-columns: 1fr;
+            padding: 2rem;
+        }
+    
+        .container-car img {
+            max-width: 100%;
+        }
+    }
+    
+    @media (max-width: 400px) {
+        .container-car h3 {
+            font-size: 1rem;
+        }
+    
+        .container-car p {
+            font-size: 0.875rem;
+        }
+        
+        .infoContacto img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 /* ---------- FOOTER HTML ---------- */
 
